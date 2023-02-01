@@ -10,3 +10,4 @@ React
   useEffect(()=>{loop through when.....},["variable" = variable changes])
   
 ![Screenshot (341)](https://user-images.githubusercontent.com/54079464/216142928-623c3e3f-ec56-47a3-893d-721ce66cbf4f.png)
+![Screenshot (343)](https://user-images.githubusercontent.com/54079464/216143038-c72322b7-23f3-4905-bacc-bc0af85d4237.png)
