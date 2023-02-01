@@ -9,5 +9,6 @@ React
   const[contries(variable),setcountries(to change the value)]=useState(["initial value"]);
   useEffect(()=>{loop through when.....},["variable" = variable changes])
   
-![Screenshot (341)](https://user-images.githubusercontent.com/54079464/216142928-623c3e3f-ec56-47a3-893d-721ce66cbf4f.png)
-![Screenshot (343)](https://user-images.githubusercontent.com/54079464/216143038-c72322b7-23f3-4905-bacc-bc0af85d4237.png)
+
+![Screenshot (345)](https://user-images.githubusercontent.com/54079464/216143448-d4d598a4-2d95-4806-a26e-2527a8a3d779.png)
+![Screenshot (344)](https://user-images.githubusercontent.com/54079464/216143597-19a2f1cc-20c5-4f75-bea6-4ccfb73e37aa.png)
