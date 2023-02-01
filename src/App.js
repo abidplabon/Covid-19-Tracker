@@ -23,20 +23,20 @@ function App() {
   },[])
 
   useEffect(()=>{
-    const getCountriesData=async()=>{
+    const getCountriesData=async()=>{                                     //fetch returns a promise
       await fetch("https://disease.sh/v3/covid-19/countries")             //Calling the API
       .then((response)=>response.json())                                  //Data is cleared in format
       .then((data)=>{
-        const countries= data.map((country)=>(
+        const countries= data.map((country)=>(                            //maps from the huge return json format data
           {
             name: country.country,
             value: country.countryInfo.iso2,
           }));
           setTableData(data);
-          setCountries(countries);
+          setCountries(countries);                      //Loop through all the "countries" variables
       });
     };
-    getCountriesData();
+    getCountriesData();                                 //Re-init the async function
   },[]);                                               //Runs a function under a condition in the [] bracket
   
   const onCountryChange = async(event)=>{
@@ -45,8 +45,8 @@ function App() {
 
     const url=
       countryCode==="worldwide"
-        ? "https://disease.sh/v3/covid-19/all"
-        : `https://disease.sh/v3/covid-19/countries/${countryCode}`
+        ? "https://disease.sh/v3/covid-19/all"                          //when dropDown world wide then URL
+        : `https://disease.sh/v3/covid-19/countries/${countryCode}`     //when dropDown specific country
       await fetch(url)
         .then(response=>response.json())
         .then(data=>{
@@ -63,7 +63,7 @@ function App() {
 
 
       <FormControl className='app__dropdown'>
-      <Select variant='outlined' onChange={onCountryChange} value={country}>
+      <Select variant='outlined' onChange={onCountryChange} value={country}>      
 
 
         <MenuItem value="worldwide">Worldwide</MenuItem>
